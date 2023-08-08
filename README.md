@@ -10,6 +10,14 @@ We chose to use the Express.js framework due to its simplicity, scalability, and
 
 The database schema includes two main tables: `Users` and `Data`. The `Users` table stores user information such as username, email, password hash, full name, age, and gender. The `Data` table stores key-value pairs for storing and retrieving data.
 
+## Docker Setup
+
+This project also includes Docker setup for easier development and deployment. Docker allows you to containerize your application along with its dependencies.
+
+### Prerequisites
+
+- Install Docker: [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
 ## Instructions to Run the Code
 
 1. Clone the repository:
@@ -21,7 +29,7 @@ The database schema includes two main tables: `Users` and `Data`. The `Users` ta
 2. Install dependencies:
    `npm install`
    
-4. Create a `.env` file in the root directory and provide your database credentials:
+3. Create a `.env` file in the root directory and provide your database credentials:
    ```plaintext
    DB_HOST=your_database_host
    DB_USER=your_database_user
@@ -29,9 +37,20 @@ The database schema includes two main tables: `Users` and `Data`. The `Users` ta
    DB_DATABASE=your_database_name
    JWT_SECRET=your_secret_key
    ```
-5. Run the server:
+   
+4. Run the server:
    `npm start`
    
+### OR
+
+5. Build and start the containers:
+   `docker-compose up --build`
+
+6. When done, stop the containers by pressing `Ctrl+C` in the terminal where `docker-compose up` is running.
+
+   
+
+
 ## Instructions to Setup the Code
 
 1. Install Node.js and npm if not already installed.
@@ -42,6 +61,10 @@ The database schema includes two main tables: `Users` and `Data`. The `Users` ta
 ```npx sequelize-cli db:migrate```
 
 4. Follow the "Instructions to Run the Code" section above.
+
+## Docker Configuration
+
+The Docker setup includes two services: express-app and mysql. The Express app runs on port 3000, and the MySQL container exposes port 3306.
    
 ## Endpoints
 
