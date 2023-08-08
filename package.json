@@ -1,0 +1,18 @@
+{
+  "name": "dpdzero_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Rakesh Kumar Sahoo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mysql2": "^3.6.0",
+    "sequelize": "^6.32.1"
+  }
+}

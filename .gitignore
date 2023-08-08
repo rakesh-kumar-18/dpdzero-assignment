@@ -1,0 +1,11 @@
+# Node.js and Express
+node_modules/
+
+# Environment files
+.env
+
+# IDE and editor specific files
+.vscode/
+
+# Dependency lock files
+package-lock.json
